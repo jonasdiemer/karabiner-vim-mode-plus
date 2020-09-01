@@ -2,9 +2,9 @@
 
 A complex modification for [Karabiner Elements](https://karabiner-elements.pqrs.org/) that mimics [Vim's navigation](https://vim.fandom.com/wiki/Moving_around) throughout your entire Mac.
 
-## So what do you get?
+## 1. So what do you get?
 
-### NORMAL mode
+### 1.1 NORMAL mode
 
 * Activate with <code>caps lock</code>.
 * Deactivate with:
@@ -76,7 +76,7 @@ key | action
 <code>m</code> | Activate Hammerspoon Markdown modal
 <code>spacebar</code> | Activate Hammerspoon hyper modal
 
-### VISUAL mode
+### 1.2 VISUAL mode
 
 From within NORMAL mode you can switch to VISUAL mode with <code>v</code>. (Unfortunately you cannot switch to the other end of the selection with <code>o</code> as you normally would, so choose your starting point wisely.)
 
@@ -91,17 +91,19 @@ key | action
 <code>c</code> | Change (“cut”) the selection and exit Vim Mode entirely
 <code>x</code> | Remove the selection and enter NORMAL mode
 
-## Setting up
+## 2. Setting up
 
-1. Install Karabiner. (I used [this Homebrew cask](https://formulae.brew.sh/cask/karabiner-elements).)
-2. Import this complex modification straight into Karabiner through this link. (You might have to copy and paste it into your browser's address bar.):
+1. Install Karabiner. (I used [this Homebrew cask](https://formulae.brew.sh/cask/karabiner-elements) through `brew cask install karabiner-elements`.)
+2. Import this complex modification straight into Karabiner through this link:
 
-    <a href="karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fgit.sr.ht%2F~harmtemolder%2Fkarabiner-vim-mode-plus%2Fblob%2Fmaster%2Fvim_mode_plus.json">karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fgit.sr.ht%2F~harmtemolder%2Fkarabiner-vim-mode-plus%2Fblob%2Fmaster%2Fvim_mode_plus.json</a>
+    <a href="karabiner://karabiner/assets/complex_modifications/import?url=https://git.sr.ht/~harmtemolder/karabiner-vim-mode-plus/blob/master/vim_mode_plus.json" target="_blank">karabiner://karabiner/assets/complex_modifications/import?url=https://git.sr.ht/~harmtemolder/karabiner-vim-mode-plus/blob/master/vim_mode_plus.json</a>
 
-## Making changes
+    (You might have to copy and paste it into your browser's address bar if your browser does not render it as a clickable link.)
+
+## 3. Making changes
 
 I write my complex modifications in `YML` files, converting them into `JSON` using `yml-to-json.py`. You don't have to, but you can, if you want to. Either way, make sure to remove and re-add all parts of this mod in Karabiner's “Complex modifications” tab after making changes. The order they are in is important.
 
-## Reporting issues
+## 4. Reporting issues
 
 If you encounter any issues, please report them [here](https://todo.sr.ht/~harmtemolder/karabiner-vim-mode-plus). (If you need help with sourcehut's issue tracker, see [this man page](https://man.sr.ht/todo.sr.ht/).) I'd also love to hear additions you would like to see to this setup.
