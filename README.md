@@ -28,8 +28,8 @@ key | action
 <code>l</code> | Move cursor right*
 <code>e</code> | Move cursor to next end of word
 <code>b</code> | Move cursor to previous start of word
-<code>0</code> | Move cursor to start of line
-<code>^</code> | Move cursor to start of line
+<code>0</code> | Move cursor to start of line (before any tabs)
+<code>^</code> | Move cursor to start of line (after any tabs)
 <code>$</code> | Move cursor to end of line
 <code>g</code>,<code>g</code> | Move cursor to start of document
 <code>G</code> | Move cursor to end of document
@@ -42,9 +42,9 @@ Combine those with <code>d</code>, <code>y</code> and <code>c</code> to delete (
 
 key | action
 --- | ---
-<code>d</code>,<code>d</code>/<code>y</code>,<code>y</code>/<code>c</code>,<code>c</code> | Delete/yank/change the entire line
-<code>d</code>,<code>e</code>/<code>y</code>,<code>e</code>/<code>c</code>,<code>e</code> | Delete/yank/change to the next end of word |
-<code>d</code>,<code>b</code>/.../... | Delete/yank/change to the previous start of word
+<code>d</code>,<code>d</code> / <code>y</code>,<code>y</code> / <code>c</code>,<code>c</code> | Delete/yank/change the entire line
+<code>d</code>,<code>e</code> / <code>y</code>,<code>e</code> / <code>c</code>,<code>e</code> | Delete/yank/change to the next end of word |
+<code>d</code>,<code>b</code> / ... / ... | Delete/yank/change to the previous start of word
 ... | Ditto for all other navigation keys mentioned above
 
 Also:
@@ -84,6 +84,7 @@ key | action
 --- | ---
 <code>v</code> | Exit VISUAL mode, enter NORMAL mode
 <code>h</code> | Select left
+<code>j</code> | Select down
 ... | Ditto for all other navigation keys mentioned above
 <code>d</code> | Delete (“cut”) the selection and enter NORMAL mode
 <code>y</code> | Yank (“copy”) the selection and enter NORMAL mode
@@ -92,8 +93,10 @@ key | action
 
 ## Setting up
 
-1. Install Karabiner. (I use [the Homebrew cask](https://formulae.brew.sh/cask/karabiner-elements).)
-2. Import this complex modification straight into Karabiner through the following link: <a href="karabiner://karabiner/assets/complex_modifications/import?url=https://git.sr.ht/~harmtemolder/karabiner-vim-mode-plus/blob/master/vim_mode_plus.json">karabiner://karabiner/assets/complex_modifications/import?url=https://git.sr.ht/~harmtemolder/karabiner-vim-mode-plus/blob/master/vim_mode_plus.json</a>
+1. Install Karabiner. (I used [this Homebrew cask](https://formulae.brew.sh/cask/karabiner-elements).)
+2. Import this complex modification straight into Karabiner through this link. (You might have to copy and paste it into your browser's address bar.):
+
+    <a href="karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fgit.sr.ht%2F~harmtemolder%2Fkarabiner-vim-mode-plus%2Fblob%2Fmaster%2Fvim_mode_plus.json">karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fgit.sr.ht%2F~harmtemolder%2Fkarabiner-vim-mode-plus%2Fblob%2Fmaster%2Fvim_mode_plus.json</a>
 
 ## Making changes
 
