@@ -2260,7 +2260,7 @@ rules:
             value: 1
   - description: (Vim 10/11) s,m,spacebar -> Hammerspoon modals
     manipulators:
-      - type: basic
+      - type: basic  # [s] Activate Hammerspoon screen modal
         from:
           key_code: s
         to:
@@ -2279,7 +2279,7 @@ rules:
           - name: vim_mode
             type: variable_if
             value: 1
-      - type: basic
+      - type: basic  # [m] Activate Hammerspoon Markdown modal
         from:
           key_code: m
         to:
@@ -2298,7 +2298,7 @@ rules:
           - name: vim_mode
             type: variable_if
             value: 1
-      - type: basic
+      - type: basic  # [spacebar] Activate Hammerspoon hyper modal
         from:
           key_code: spacebar
         to:
